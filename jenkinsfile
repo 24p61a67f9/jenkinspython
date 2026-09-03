@@ -1,12 +1,12 @@
 node {
 
     stage('Preparation') {
-        git branch: 'main', url:'
+        git branch: 'main', url:'https://github.com/24p61a67f9/jenkinspython.git'
     }
 
     stage('Build') {
-        bat 
+        bat'C:\Program Files\Python314\python.exe'
     stage('Test') {
-        bat 
+        bat 'C:\Program Files\Python314\python.exe'
     }
 

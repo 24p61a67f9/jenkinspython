@@ -1,1 +1,12 @@
+node {
+
+    stage('Preparation') {
+        git branch: 'main', url:'
+    }
+
+    stage('Build') {
+        bat 
+    stage('Test') {
+        bat 
+    }
 

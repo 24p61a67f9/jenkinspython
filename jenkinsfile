@@ -1,12 +1,11 @@
-node {
+pipeline {
+    agent any
 
-    stage('Preparation') {
-        git branch: 'main', url:'https://github.com/24p61a67f9/jenkinspython.git'
+    stages {
+        stage('Run Python Script') {
+            steps {
+                bat '"C:/Program Files/Python314/python.exe" a.py'
+            }
+        }
     }
-
-    stage('Build') {
-        bat '"C:\Program Files\Python314\python.exe"a.py'
-    stage('Test') {
-        bat '"C:\Program Files\Python314\python.exe"a.py'
-    }
-
+}

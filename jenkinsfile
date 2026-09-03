@@ -5,8 +5,8 @@ node {
     }
 
     stage('Build') {
-        bat'C:\Program Files\Python314\python.exe'
+        bat '"C:\Program Files\Python314\python.exe"b.py'
     stage('Test') {
-        bat 'C:\Program Files\Python314\python.exe'
+        bat '"C:\Program Files\Python314\python.exe"b.py'
     }
 
